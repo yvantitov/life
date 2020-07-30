@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life</title>
+  <script src="life.js"></script>
+  <style>
+    body {
+      background-image: url("img/bg.gif");
+      font-family: "Arial Narrow", "sans-serif";
+      user-select: none;
+    }
+    #life-game {
+      background-color: white;
+    }
+    #life-game-container {
+      border: 12px ridge aqua;
+      display: block;
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      top: 50%;
+      margin-top: -200px;
+      right: 50%;
+      margin-right: -200px;
+    }
+    #ctl-button {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(82, 50, 187);
+      position: absolute;
+      width: 70px;
+      height: 30px;
+      background-color: hotpink;
+      border: 4px ridge aqua;
+      right: 50%;
+      margin-right: -35px;
+      top: 50%;
+      margin-top: 200px;
+      transition: 0.3s;
+    }
+    #ctl-button:hover {
+      background-color: lightgreen;
+    }
+    #ctl-button:focus {
+      outline: none;
+    }
+    #title {
+      position: absolute;
+      width: 130px;
+      right: 50%;
+      margin-right: -65px;
+      top: 50%;
+      margin-top: -280px;
+      height: 70px;
+      font-size: 60px;
+      color: hotpink;
+      -webkit-text-stroke: 2px aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Life</h1>
+  <div id="life-game-container">
+    <canvas id="life-game" width="400px" height="400px"></canvas>
+  </div>
+  <button id="ctl-button">start</button>
+</body>
+</html>
